@@ -93,6 +93,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ACTIVESHADOWBOTTOM.PNG" />
+    <Resource Include="Images\ACTIVESHADOWLEFT.PNG" />
+    <Resource Include="Images\ACTIVESHADOWRIGHT.PNG" />
+    <Resource Include="Images\ACTIVESHADOWTOP.PNG" />
+    <Resource Include="Images\INACTIVESHADOWBOTTOM.PNG" />
+    <Resource Include="Images\INACTIVESHADOWLEFT.PNG" />
+    <Resource Include="Images\INACTIVESHADOWRIGHT.PNG" />
+    <Resource Include="Images\INACTIVESHADOWTOP.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
