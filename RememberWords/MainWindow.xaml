@@ -11,12 +11,16 @@
                 Fill="Black"
                 PreviewMouseDown="HandleHeaderPreviewMouseDown" />
             <Button
+                Cursor="Arrow"
+                x:Name="MinButton"
                 HorizontalAlignment="Right"
                 Margin="0,6,45,0"
                 VerticalAlignment="Top"
                 Style="{StaticResource ChromeButtonStyle}"
-                Click="HandleMinimizeClick">
-                <TextBlock
+                Click="HandleMinimizeClick"
+                MouseEnter="MinButton_MouseEnter"
+                MouseLeave="MinButton_MouseLeave">
+                <TextBlock x:Name="MinButtonText"
                     TextWrapping="Wrap"
                     Text="0"
                     FontFamily="Webdings"
@@ -24,11 +28,14 @@
                     FontSize="13.333" />
             </Button>
             <Button
+                Cursor="Arrow"
                 HorizontalAlignment="Right"
                 Margin="0,6,26,0"
                 VerticalAlignment="Top"
                 Style="{StaticResource ChromeButtonStyle}"
-                Click="HandleRestoreClick">
+                Click="HandleRestoreClick"
+                MouseEnter="MaxRestoreButton_MouseEnter"
+                MouseLeave="MaxRestoreButton_MouseLeave">
                 <TextBlock x:Name="MaxRestoreButtonText"
                     TextWrapping="Wrap"
                     Text="1"
@@ -37,12 +44,15 @@
                     FontSize="13.333" />
             </Button>
             <Button
+                Cursor="Arrow"
                 HorizontalAlignment="Right"
                 Margin="0,6,8,0"
                 VerticalAlignment="Top"
                 Style="{StaticResource ChromeButtonStyle}"
-                Click="HandleCloseClick">
-                <TextBlock
+                Click="HandleCloseClick"
+                MouseEnter="CloseButton_MouseEnter"
+                MouseLeave="CloseButton_MouseLeave">
+                <TextBlock x:Name="CloseButtonText"
                     TextWrapping="Wrap"
                     Text="r"
                     FontFamily="Webdings"

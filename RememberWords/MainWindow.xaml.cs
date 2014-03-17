@@ -598,5 +598,37 @@ namespace RememberWords
                 public POINT m_ptMaxTrackSize;
             };
         }
+
+      
+
+        private void MinButton_MouseEnter(object sender, MouseEventArgs e)
+        {
+            MinButtonText.Foreground = new SolidColorBrush(Color.FromArgb(255, 241, 241, 241));
+        }
+
+        private void MinButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            MinButtonText.Foreground = new SolidColorBrush(Color.FromArgb(255, 145, 145, 145));
+        }
+
+        private void MaxRestoreButton_MouseEnter(object sender, MouseEventArgs e)
+        {
+            MaxRestoreButtonText.Foreground = new SolidColorBrush(Color.FromArgb(255, 241, 241, 241));
+        }
+
+        private void MaxRestoreButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            MaxRestoreButtonText.Foreground = new SolidColorBrush(Color.FromArgb(255, 145, 145, 145));
+        }
+
+        private void CloseButton_MouseEnter(object sender, MouseEventArgs e)
+        {
+            CloseButtonText.Foreground = new SolidColorBrush(Color.FromArgb(255, 241, 241, 241));
+        }
+
+        private void CloseButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            CloseButtonText.Foreground = new SolidColorBrush(Color.FromArgb(255, 145, 145, 145));
+        }
     }
 }
