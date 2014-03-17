@@ -304,6 +304,9 @@ namespace RememberWords
         /// instance containing the event data.</param>
         private void HandleRestoreClick(Object sender, RoutedEventArgs e)
         {
+            MaxRestoreButtonText.Text = (WindowState == WindowState.Normal)
+                ? "2" : "1";
+
             WindowState = (WindowState == WindowState.Normal)
                 ? WindowState.Maximized : WindowState.Normal;
 

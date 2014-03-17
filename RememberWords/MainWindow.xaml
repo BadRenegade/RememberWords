@@ -12,7 +12,7 @@
                 PreviewMouseDown="HandleHeaderPreviewMouseDown" />
             <Button
                 HorizontalAlignment="Right"
-                Margin="500,6,45,0"
+                Margin="0,6,45,0"
                 VerticalAlignment="Top"
                 Style="{StaticResource ChromeButtonStyle}"
                 Click="HandleMinimizeClick">
@@ -25,11 +25,11 @@
             </Button>
             <Button
                 HorizontalAlignment="Right"
-                Margin="500,6,26,0"
+                Margin="0,6,26,0"
                 VerticalAlignment="Top"
                 Style="{StaticResource ChromeButtonStyle}"
                 Click="HandleRestoreClick">
-                <TextBlock
+                <TextBlock x:Name="MaxRestoreButtonText"
                     TextWrapping="Wrap"
                     Text="1"
                     FontFamily="Webdings"
@@ -38,7 +38,7 @@
             </Button>
             <Button
                 HorizontalAlignment="Right"
-                Margin="500,6,8,0"
+                Margin="0,6,8,0"
                 VerticalAlignment="Top"
                 Style="{StaticResource ChromeButtonStyle}"
                 Click="HandleCloseClick">
@@ -57,7 +57,7 @@
                 x:Name="m_roundBorder"
                 x:FieldModifier="private"
                 BorderThickness="1"
-                BorderBrush="LightGray"
+                BorderBrush="Aqua"
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch" />
             <Rectangle
